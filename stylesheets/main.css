@@ -142,6 +142,7 @@ table {
           border-bottom: 2px solid #F4DD56;
           outline: none; }
     #about .content .close {
+      color: #333333;
       display: block;
       margin: 0 0 15px 0;
       text-align: center;
