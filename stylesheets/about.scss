@@ -1,0 +1,91 @@
+#about {
+  background: rgba($white, 0.95);
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  margin: auto;
+  width: 100%;
+  &:target {
+    bottom: 0;
+  }
+  &:not(:target){
+    bottom: -100%;
+  }
+
+  .content {
+    padding: 20px;
+    margin: auto;
+    max-width: 650px;
+
+    h1 {
+      font-size: 22px;
+      font-weight: normal;
+      margin: 15px 0;
+    }
+
+    p {
+      color: $text-color;
+      font-size: 16px;
+      line-height: 1.8em;
+      margin: 15px 0 0 0;
+      a {
+        color: $text-color;
+        border-bottom: $border-size solid $text-color;
+        text-decoration: none;
+        &:hover, &:focus {
+          border-bottom: $border-size solid $main-color;
+          outline: none;
+        }
+      }
+    }
+
+    .close {
+      display: block;
+      margin: 0 0 15px 0;
+      text-align: center;
+      text-decoration: none;
+      &:focus {
+        color: $main-color;
+        outline: none;
+      }
+    }
+
+    form {
+      margin: 15px 0 0 0;
+      text-align: center;
+
+      input {
+        border: $border-size solid $main-color;
+        border-radius: 4px;
+        color: $text-color;
+        font-family: $defaut-font-family;
+        font-size: 16px;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        &[type="email"] {
+          padding: 10px 0 10px 10px;
+          &:focus {
+            background: $white;
+            outline: none;
+          }
+        }
+        &[type="submit"] {
+          background-color: $white;
+          margin: 15px 0 0 0;
+          padding: 10px 0;
+          text-transform: uppercase;
+          &:hover {
+            background: $main-color;
+            cursor: pointer;
+          }
+          &:focus {
+            background: $main-color;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}

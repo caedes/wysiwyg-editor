@@ -1,0 +1,19 @@
+$white: #FFFFFF;
+$text-color: #333333;
+$main-color: #F4DD56;
+$defaut-font-family: Verdana, Geneva, sans-serif;
+$border-size: 2px;
+
+body {
+  font-family: $defaut-font-family;
+}
+
+hr {
+  border: $border-size / 2 solid $main-color;
+  margin: 0;
+}
+
+@import 'reset.scss';
+@import 'editor.scss';
+@import 'menu.scss';
+@import 'about.scss';

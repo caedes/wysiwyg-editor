@@ -39,40 +39,40 @@
     <meta property="og:type" content="website" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/main.css" type="text/css">
   </head>
 
   <body>
-    <div class="editor">
-      <div id="title" class="text-title" contenteditable="true"></div>
-      <hr class="separator"/>
-      <div id="content" class="text-content" contenteditable="true"></div>
+    <div id="editor">
+      <div id="title" class="title" contenteditable="true"></div>
+      <hr/>
+      <div id="content" class="content" contenteditable="true"></div>
     </div>
 
-    <ul id="menu" class="menu">
-      <li id="bold" class="menu-link"><a class="menu-link-bold" href="#/">B</a></li>
-      <li id="italic" class="menu-link"><a class="menu-link-italic" href="#/">I</a></li>
-      <li id="underline" class="menu-link"><a class="menu-link-underline" href="#/">U</a></li>
+    <ul id="menu">
+      <li id="bold" class="bold"><a href="#/">B</a></li>
+      <li id="italic" class="italic"><a href="#/">I</a></li>
+      <li id="underline" class="underline"><a href="#/">U</a></li>
 
-      <li class="menu-link menu-link-about"><a href="#about">About</a></li>
+      <li class="about"><a href="#about">About</a></li>
     </ul>
 
     <div id="about">
-      <div class="about-content">
+      <div class="content">
 
-        <a class="about-content-close" href="#">✖</a>
+        <a class="close" href="#">close</a>
 
-        <p class="text-title">Simple note-taking app</p>
+        <h1>Simple note-taking app</h1>
 
-        <hr class="separator"/>
+        <hr/>
 
-        <p class="text-content">This is a project I made for fun and to improve my coding skills. You can learn more about it in this <a href="https://blog.quentin-bellanger.com/create-a-simple-note-taking-app-20cfd66a52ac" target="_blank">blog post</a>. Questions? Send me an <a href="mailto:hello@quentin-bellanger.com" target="_blank">email</a> or a <a href="https://twitter.com/bellanger_q" target="_blank">tweet</a>. To get the code, visit the dedicated <a href="https://github.com/bellangerq/note-taking-app" target="_blank">GitHub page</a>.</p>
+        <p>This is a project I made for fun and to improve my coding skills. You can learn more about it in this <a href="https://blog.quentin-bellanger.com/create-a-simple-note-taking-app-20cfd66a52ac" target="_blank">blog post</a>. Questions? Send me an <a href="mailto:hello@quentin-bellanger.com" target="_blank">email</a> or a <a href="https://twitter.com/bellanger_q" target="_blank">tweet</a>. To get the code, visit the dedicated <a href="https://github.com/bellangerq/wysiwyg-editor" target="_blank">GitHub page</a>.</p>
 
-        <p class="text-content">If you're interested, you can subscribe for updates and new projects:</p>
+        <p>If you're interested, you can subscribe for updates and new projects:</p>
 
-        <form class="newsletter-form" action="https://quentin-bellanger.us10.list-manage.com/subscribe/post" method="post" target="_blank">
-          <input class="newsletter-input" type="email" name="EMAIL" placeholder="your@email.com"/>
-          <input class="newsletter-submit" type="submit" name="subscribe" value="Subscribe"/>
+        <form action="https://quentin-bellanger.us10.list-manage.com/subscribe/post" method="post" target="_blank">
+          <input type="email" name="EMAIL" placeholder="your@email.com"/>
+          <input type="submit" name="subscribe" value="Subscribe"/>
           <input type="hidden" name="u" value="4370146579df63d12feebe507">
           <input type="hidden" name="id" value="9a41696084">
         </form>
