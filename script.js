@@ -1,6 +1,7 @@
 // -------- SAVING FUNCTION -------- //
-const title = document.getElementById('title');
-const content = document.getElementById('content');
+const title = document.querySelector('.title');
+const content = document.querySelector('.content');
+
 const defaultTitle = 'What are you thinking about?';
 const defaultContent = "💡 A project idea, your next blog post, random thoughts: let\'s write it down here.<br/><br/>💅 Add some style (<b>bold</b>, <i>italic</i> or <u>underline</u>) to your text by using the buttons below or common keyboard shortcuts.<br/><br/>🛡 Accidentally closed your tab? Don't worry: your content is automatically saved in your browser!";
 
@@ -21,9 +22,9 @@ content.onkeyup = () => save();
 
 
 // -------- STYLING OPTIONS -------- //
-const boldButton = document.getElementById('bold');
-const italicButton = document.getElementById('italic');
-const underlineButton = document.getElementById('underline');
+const boldButton = document.querySelector('.bold');
+const italicButton = document.querySelector('.italic');
+const underlineButton = document.querySelector('.underline');
 
 // addStlye function
 addStyle = (style) => {
