@@ -1,9 +1,10 @@
+'use strict';
 // -------- SAVING FUNCTION -------- //
 const editorTitle = document.querySelector('.title');
 const editorContent = document.querySelector('.content');
 
 const defaultTitle = editorTitle.innerHTML;
-const defaultContent = editorContent.innerHTML;;
+const defaultContent = editorContent.innerHTML;
 
 // Set localStorage values
 editorTitle.innerHTML = localStorage['title'] || defaultTitle;
