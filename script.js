@@ -1,17 +1,23 @@
 'use strict';
+
 // -------- SAVING FUNCTION -------- //
 const editorTitle = document.querySelector('.title');
 const editorContent = document.querySelector('.content');
 
-const defaultTitle = editorTitle.innerHTML;
-const defaultContent = editorContent.innerHTML;
+const defaultTitle = 'What are you thinking about?';
+const defaultContent = `💡 A new project, your next blog post, a
+random thought: let's write down your next idea!<br/><br/>💅
+Add some style (<b>bold</b>, <i>italic</i> or <u>underline</u>)
+to your text by using the buttons below.<br/><br/>🛡 Accidentally
+closed your tab? Don't worry: your content is automatically saved
+in your browser!`;
 
 // Set localStorage values
 editorTitle.innerHTML = localStorage['title'] || defaultTitle;
 editorContent.innerHTML = localStorage['content'] || defaultContent;
 
 // Define function
-save = () => {
+let save = () => {
   localStorage['title'] = title.innerHTML;
   localStorage['content'] = content.innerHTML;
 };
@@ -27,7 +33,7 @@ const italicButton = document.querySelector('.italic');
 const underlineButton = document.querySelector('.underline');
 
 // Define function
-addStyle = (style) => {
+let addStyle = (style) => {
   document.execCommand(style);
 };
 
