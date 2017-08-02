@@ -10,16 +10,22 @@ A new project, your next blog post, a random thought: let's write down your next
 
 ![Note-taking app](https://notes.quentin-bellanger.com/img/cover.png)
 
-## Setup
+## Installation
 
-### Gulp
+```shell
+npm i
+```
+
+## Getting Started
 
 Compile Sass to CSS:
-```sh
-$ gulp sass
+
+```shell
+gulp sass
 ```
 
 Watch for changes in `.scss` files:
-```sh
-$ gulp
+
+```shell
+gulp
 ```
