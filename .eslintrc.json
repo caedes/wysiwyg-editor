@@ -1,11 +1,16 @@
 {
-    "extends": "google",
-    "parserOptions": {
+  "extends": "eslint:recommended",
+  "parserOptions": {
     "ecmaVersion": 6
-    },
-    "rules": {
-      "no-console": "off",
-      "strict": ["error", "global"],
-      "curly": "warn"
-    }
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "no-console": "off",
+    "strict": ["error", "global"],
+    "curly": "warn"
+  }
 }

@@ -23,3 +23,9 @@ Watch for changes in `.scss` files:
 ```sh
 $ gulp
 ```
+
+## Linters
+
+```shell
+$ eslint .
+```
